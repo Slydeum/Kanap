@@ -1,3 +1,5 @@
+// Récupération des produits via l'API
+
 fetch('http://localhost:3000/api/products')
     .then(response => response.json())
     .then(dataBase => {
@@ -18,7 +20,7 @@ function products(dataBase) {
 
     for (let product of dataBase) {
 
-        // Identifier la structure de l'élément HTML : #items    
+        // Identifier la structure de l'élément HTML
         let structureProducts = document.querySelector('#items');
 
         // Ajout des elements HTML à #items
